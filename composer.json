@@ -1,0 +1,21 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/GrahamCampbell/Proton"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "alexbilbie/proton": "dev-complete as v1.0.6",
+        "symfony/console": "~2.5",
+        "illuminate/support": "~4.2",
+        "illuminate/database": "~4.2",
+        "hashids/hashids": "~1.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrahamCampbell\\Yeh\\": "src/"
+        }
+    }
+}
