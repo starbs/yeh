@@ -28,7 +28,15 @@ class ShortenController extends AbstractController
             return $this->error(['message'  => 'The Image Was Corrupt'], 400);
         }
 
+        if (strtolower(substr($image->getMimeType(), 0, 5)) !== 'image') {
+            return $this->error(['message'  => 'Only Images Are Allowed'], 400);
+        }
+
         $url = $this->app['factory']->save($image);
+
+        if ($this->input('sharex')) {
+            return $this->raw($url, 'text/plain');
+        }
 
         return $this->success(['message'  => 'Image Uploaded Successfully', 'url' => $url]);
     }

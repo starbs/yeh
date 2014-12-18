@@ -21,7 +21,7 @@ class MainController extends AbstractController
         $image = $this->app['factory']->get($this->args['id']);
 
         if ($image) {
-            return $this->image($image['image'], $image['mime']);
+            return $this->raw($image['image'], $image['mime']);
         }
 
         return $this->error(['message' => 'Not Found'], 404);

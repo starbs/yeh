@@ -67,7 +67,7 @@ abstract class AbstractController
         return $this->response;
     }
 
-    protected function image($data, $mime)
+    protected function raw($data, $mime)
     {
         $this->response->headers->add(['Content-Type' => $mime]);
         $this->response->setContent($data);
