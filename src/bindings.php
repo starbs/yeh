@@ -1,7 +1,7 @@
 <?php
 
-/**
- * This file is part of Yeh by Graham Campbell.
+/*
+ * This file is part of Starbs Yeh by Graham Campbell.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -17,5 +17,5 @@ $app['hash'] = function () {
 };
 
 $app['factory'] = function () use ($app) {
-    return new GrahamCampbell\Yeh\Factory($app['hash'], $app['url']);
+    return new Starbs\Yeh\Factory($app['hash'], $app['url']);
 };
