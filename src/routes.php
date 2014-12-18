@@ -1,7 +1,7 @@
 <?php
 
-/**
- * This file is part of Yeh by Graham Campbell.
+/*
+ * This file is part of Starbs Yeh by Graham Campbell.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -12,8 +12,8 @@
  * THE SOFTWARE.
  */
 
-$app->get('/', 'GrahamCampbell\Yeh\Controllers\HomeController::index');
+$app->get('/', 'Starbs\Yeh\Controllers\HomeController::index');
 
-$app->post('/', 'GrahamCampbell\Yeh\Controllers\ShortenController::index');
+$app->post('/', 'Starbs\Yeh\Controllers\ShortenController::index');
 
-$app->get('/{id}', 'GrahamCampbell\Yeh\Controllers\MainController::index');
+$app->get('/{id}', 'Starbs\Yeh\Controllers\MainController::index');

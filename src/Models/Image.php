@@ -1,7 +1,7 @@
 <?php
 
-/**
- * This file is part of Yeh by Graham Campbell.
+/*
+ * This file is part of Starbs Yeh by Graham Campbell.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -12,7 +12,7 @@
  * THE SOFTWARE.
  */
 
-namespace GrahamCampbell\Yeh\Models;
+namespace Starbs\Yeh\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

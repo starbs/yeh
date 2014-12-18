@@ -1,7 +1,7 @@
 <?php
 
-/**
- * This file is part of Yeh by Graham Campbell.
+/*
+ * This file is part of Starbs Yeh by Graham Campbell.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -12,7 +12,9 @@
  * THE SOFTWARE.
  */
 
-namespace GrahamCampbell\Yeh\Controllers;
+namespace Starbs\Yeh\Controllers;
+
+use Starbs\Http\Controllers\AbstractController;
 
 class ShortenController extends AbstractController
 {
@@ -28,7 +30,15 @@ class ShortenController extends AbstractController
             return $this->error(['message'  => 'The Image Was Corrupt'], 400);
         }
 
+        if (strtolower(substr($image->getMimeType(), 0, 5)) !== 'image') {
+            return $this->error(['message'  => 'Only Images Are Allowed'], 400);
+        }
+
         $url = $this->app['factory']->save($image);
+
+        if ($this->input('sharex')) {
+            return $this->raw($url, 'text/plain');
+        }
 
         return $this->success(['message'  => 'Image Uploaded Successfully', 'url' => $url]);
     }
