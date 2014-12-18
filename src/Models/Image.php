@@ -12,7 +12,7 @@
  * THE SOFTWARE.
  */
 
-namespace GrahamCampbell\Yeh\Models;
+namespace Starbs\Yeh\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

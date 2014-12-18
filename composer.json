@@ -10,6 +10,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
+        "alexbilbie/proton": "~1.0.5@dev",
         "starbs/console": "0.1.*@dev",
         "starbs/http": "0.1.*@dev",
         "illuminate/database": "~4.2",
