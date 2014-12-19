@@ -16,7 +16,6 @@ namespace Starbs\Yeh\Console;
 
 use Starbs\Console\AbstractApplication;
 use Starbs\Yeh\Console\Commands\RemoveCommand;
-use Symfony\Component\Console\Input\InputArgument;
 
 class Application extends AbstractApplication
 {
