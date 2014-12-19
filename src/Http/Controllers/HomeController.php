@@ -12,12 +12,17 @@
  * THE SOFTWARE.
  */
 
-namespace Starbs\Yeh\Controllers;
+namespace Starbs\Yeh\Http\Controllers;
 
 use Starbs\Http\Controllers\AbstractController;
 
 class HomeController extends AbstractController
 {
+    /**
+     * Do some clever things, then return a response.
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     protected function fire()
     {
         return $this->success(['message' => 'You Have Arrived']);

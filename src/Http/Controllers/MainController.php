@@ -12,15 +12,20 @@
  * THE SOFTWARE.
  */
 
-namespace Starbs\Yeh\Controllers;
+namespace Starbs\Yeh\Http\Controllers;
 
 use Starbs\Http\Controllers\AbstractController;
 
 class MainController extends AbstractController
 {
+    /**
+     * Do some clever things, then return a response.
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     protected function fire()
     {
-        $image = $this->app['factory']->get($this->args['id']);
+        $image = $this->container->get('factory')->get($this->args['id']);
 
         if ($image) {
             return $this->raw($image['image'], $image['mime']);

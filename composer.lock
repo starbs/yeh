@@ -677,16 +677,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/starbs/http.git",
-                "reference": "847dc5a4b33260dddcc340140a12e9b24e8b39a1"
+                "reference": "48eb5a6fa7cfb2efdd7c5a7fa58b9edc04aeea4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/starbs/http/zipball/847dc5a4b33260dddcc340140a12e9b24e8b39a1",
-                "reference": "847dc5a4b33260dddcc340140a12e9b24e8b39a1",
+                "url": "https://api.github.com/repos/starbs/http/zipball/48eb5a6fa7cfb2efdd7c5a7fa58b9edc04aeea4a",
+                "reference": "48eb5a6fa7cfb2efdd7c5a7fa58b9edc04aeea4a",
                 "shasum": ""
             },
             "require": {
-                "alexbilbie/proton": "~1.0.5@dev",
+                "orno/di": "~2.1",
                 "php": ">=5.5.0",
                 "symfony/http-foundation": "~2.5"
             },
@@ -712,7 +712,7 @@
                 }
             ],
             "description": "Starbs Http Component",
-            "time": "2014-12-18 19:40:46"
+            "time": "2014-12-19 11:53:40"
         },
         {
             "name": "symfony/console",
