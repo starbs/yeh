@@ -15,6 +15,6 @@
 
 require __DIR__.'/start.php';
 
-$cli = new Symfony\Component\Console\Application();
-$cli->add($app['Starbs\Yeh\Commands\RemoveCommand']);
+$cli = new Starbs\Yeh\Console\Application($app->getContainer());
+
 $cli->run();
