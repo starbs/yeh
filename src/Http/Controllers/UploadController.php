@@ -16,7 +16,7 @@ namespace Starbs\Yeh\Http\Controllers;
 
 use Starbs\Http\Controllers\AbstractController;
 
-class ShortenController extends AbstractController
+class UploadController extends AbstractController
 {
     /**
      * Do some clever things, then return a response.

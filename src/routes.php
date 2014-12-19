@@ -14,6 +14,6 @@
 
 $app->get('/', 'Starbs\Yeh\Http\Controllers\HomeController::index');
 
-$app->post('/', 'Starbs\Yeh\Http\Controllers\ShortenController::index');
+$app->post('/', 'Starbs\Yeh\Http\Controllers\UploadController::index');
 
 $app->get('/{id}', 'Starbs\Yeh\Http\Controllers\MainController::index');
