@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3a7e9e91dbc0f98ae060a126047c7336",
+    "hash": "69305d4977fe63e3db448c2dd4a35736",
     "packages": [
         {
             "name": "alexbilbie/proton",
@@ -630,16 +630,16 @@
         },
         {
             "name": "starbs/console",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/starbs/console.git",
-                "reference": "670f6b6b2bf3174f47d8185c6299f055c83886b3"
+                "reference": "29e9fac85cfb04f77adcb8ecb912253fdd270545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/starbs/console/zipball/670f6b6b2bf3174f47d8185c6299f055c83886b3",
-                "reference": "670f6b6b2bf3174f47d8185c6299f055c83886b3",
+                "url": "https://api.github.com/repos/starbs/console/zipball/29e9fac85cfb04f77adcb8ecb912253fdd270545",
+                "reference": "29e9fac85cfb04f77adcb8ecb912253fdd270545",
                 "shasum": ""
             },
             "require": {
@@ -650,7 +650,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1-dev"
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
@@ -669,20 +669,20 @@
                 }
             ],
             "description": "Starbs Console Component",
-            "time": "2014-12-19 11:20:12"
+            "time": "2014-12-19 12:26:29"
         },
         {
             "name": "starbs/http",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/starbs/http.git",
-                "reference": "48eb5a6fa7cfb2efdd7c5a7fa58b9edc04aeea4a"
+                "reference": "86b5f9a4078e0bd445e05db257006936dcc58cb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/starbs/http/zipball/48eb5a6fa7cfb2efdd7c5a7fa58b9edc04aeea4a",
-                "reference": "48eb5a6fa7cfb2efdd7c5a7fa58b9edc04aeea4a",
+                "url": "https://api.github.com/repos/starbs/http/zipball/86b5f9a4078e0bd445e05db257006936dcc58cb2",
+                "reference": "86b5f9a4078e0bd445e05db257006936dcc58cb2",
                 "shasum": ""
             },
             "require": {
@@ -693,7 +693,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1-dev"
+                    "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
@@ -712,7 +712,7 @@
                 }
             ],
             "description": "Starbs Http Component",
-            "time": "2014-12-19 11:53:40"
+            "time": "2014-12-19 12:26:19"
         },
         {
             "name": "symfony/console",
@@ -1018,9 +1018,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "alexbilbie/proton": 20,
-        "starbs/console": 20,
-        "starbs/http": 20
+        "alexbilbie/proton": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
