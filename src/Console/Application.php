@@ -15,6 +15,7 @@
 namespace Starbs\Yeh\Console;
 
 use Starbs\Console\AbstractApplication;
+use Starbs\Yeh\Console\Commands\RemoveCommand;
 use Symfony\Component\Console\Input\InputArgument;
 
 class Application extends AbstractApplication
@@ -40,6 +41,6 @@ class Application extends AbstractApplication
      */
     protected function setup()
     {
-        $this->add($this->container->get('Starbs\Yeh\Console\Commands\RemoveCommand'));
+        $this->add(new RemoveCommand($this->container));
     }
 }
