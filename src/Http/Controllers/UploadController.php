@@ -12,12 +12,17 @@
  * THE SOFTWARE.
  */
 
-namespace Starbs\Yeh\Controllers;
+namespace Starbs\Yeh\Http\Controllers;
 
 use Starbs\Http\Controllers\AbstractController;
 
-class ShortenController extends AbstractController
+class UploadController extends AbstractController
 {
+    /**
+     * Do some clever things, then return a response.
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     protected function fire()
     {
         $image = $this->file('image');
@@ -34,7 +39,7 @@ class ShortenController extends AbstractController
             return $this->error(['message'  => 'Only Images Are Allowed'], 400);
         }
 
-        $url = $this->app['factory']->save($image);
+        $url = $this->container->get('factory')->save($image);
 
         if ($this->input('sharex')) {
             return $this->raw($url, 'text/plain');
