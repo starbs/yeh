@@ -12,7 +12,7 @@
  * THE SOFTWARE.
  */
 
-namespace Starbs\Yeh\Commands;
+namespace Starbs\Yeh\Console\Commands;
 
 use InvalidArgumentException;
 use Starbs\Console\Commands\AbstractCommand;
@@ -20,7 +20,18 @@ use Symfony\Component\Console\Input\InputArgument;
 
 class RemoveCommand extends AbstractCommand
 {
+    /**
+     * The command name.
+     *
+     * @var string
+     */
     protected $name = 'remove';
+
+    /**
+     * The command description.
+     *
+     * @var string
+     */
     protected $description = 'Remove the given ids from the database';
 
     /**
@@ -51,6 +62,13 @@ class RemoveCommand extends AbstractCommand
         }
     }
 
+    /**
+     * Remove the given id from the db.
+     *
+     * @param string $id
+     *
+     * @return void
+     */
     protected function remove($id)
     {
         if ($this->app['factory']->remove($id)) {

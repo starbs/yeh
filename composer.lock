@@ -1,0 +1,1030 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "3a7e9e91dbc0f98ae060a126047c7336",
+    "packages": [
+        {
+            "name": "alexbilbie/proton",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexbilbie/Proton.git",
+                "reference": "b113f141b61083702689181b8db236b624fb4971"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexbilbie/Proton/zipball/b113f141b61083702689181b8db236b624fb4971",
+                "reference": "b113f141b61083702689181b8db236b624fb4971",
+                "shasum": ""
+            },
+            "require": {
+                "league/event": "~1.0",
+                "orno/di": "~2.0",
+                "orno/route": "~1.0",
+                "php": ">=5.4.0",
+                "symfony/http-kernel": "~2.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Proton\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Bilbie",
+                    "email": "hello@alexbilbie.com"
+                }
+            ],
+            "description": "Micro PHP framework",
+            "homepage": "https://github.com/alexbilbie/proton",
+            "keywords": [
+                "HttpKernelInterface",
+                "StackPHP",
+                "framework",
+                "micro",
+                "middleware",
+                "proton"
+            ],
+            "time": "2014-12-15 17:40:30"
+        },
+        {
+            "name": "hashids/hashids",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ivanakimov/hashids.php.git",
+                "reference": "fd6593e705bee9d0443c6faeaa6aa004a9fca28d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ivanakimov/hashids.php/zipball/fd6593e705bee9d0443c6faeaa6aa004a9fca28d",
+                "reference": "fd6593e705bee9d0443c6faeaa6aa004a9fca28d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Hashids": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Akimov",
+                    "email": "ivan@barreleye.com",
+                    "homepage": "https://twitter.com/IvanAkimov"
+                }
+            ],
+            "description": "Generate hashids like YouTube or Bitly from numbers to obfuscate your database primary ids, or navigate to the right shard.",
+            "homepage": "http://hashids.org/php",
+            "keywords": [
+                "bitly",
+                "decrypt",
+                "encrypt",
+                "hash",
+                "hashid",
+                "hashids",
+                "ids",
+                "obfuscate",
+                "youtube"
+            ],
+            "time": "2014-11-14 20:39:09"
+        },
+        {
+            "name": "illuminate/container",
+            "version": "v4.2.12",
+            "target-dir": "Illuminate/Container",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/container.git",
+                "reference": "f997841ddce41ebf3202b698c021a81f69f7be9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/f997841ddce41ebf3202b698c021a81f69f7be9b",
+                "reference": "f997841ddce41ebf3202b698c021a81f69f7be9b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Container": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2014-09-24 01:34:02"
+        },
+        {
+            "name": "illuminate/database",
+            "version": "v4.2.12",
+            "target-dir": "Illuminate/Database",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/database.git",
+                "reference": "e067562e295aea78e1b11952d0668b61f2863767"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/e067562e295aea78e1b11952d0668b61f2863767",
+                "reference": "e067562e295aea78e1b11952d0668b61f2863767",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "4.2.*",
+                "illuminate/events": "4.2.*",
+                "illuminate/support": "4.2.*",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/cache": "4.2.*",
+                "illuminate/console": "4.2.*",
+                "illuminate/filesystem": "4.2.*",
+                "illuminate/pagination": "4.2.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Database": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "keywords": [
+                "database",
+                "laravel",
+                "orm",
+                "sql"
+            ],
+            "time": "2014-11-28 21:32:31"
+        },
+        {
+            "name": "illuminate/events",
+            "version": "v4.2.12",
+            "target-dir": "Illuminate/Events",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/events.git",
+                "reference": "a8471d3f6c3e87c50e25e18f13908fffaef159df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/a8471d3f6c3e87c50e25e18f13908fffaef159df",
+                "reference": "a8471d3f6c3e87c50e25e18f13908fffaef159df",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "4.2.*",
+                "illuminate/support": "4.2.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Events": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2014-10-02 19:49:50"
+        },
+        {
+            "name": "illuminate/support",
+            "version": "v4.2.12",
+            "target-dir": "Illuminate/Support",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/support.git",
+                "reference": "888e81e77a675e4848d5b8375a9e68d1b9de3de9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/888e81e77a675e4848d5b8375a9e68d1b9de3de9",
+                "reference": "888e81e77a675e4848d5b8375a9e68d1b9de3de9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "jeremeamia/superclosure": "~1.0.1",
+                "patchwork/utf8": "1.1.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Illuminate\\Support": ""
+                },
+                "files": [
+                    "Illuminate/Support/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "time": "2014-11-23 23:01:17"
+        },
+        {
+            "name": "league/event",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/event.git",
+                "reference": "9d9bd9e086b3acad09ab03f5317d27511039d71c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/event/zipball/9d9bd9e086b3acad09ab03f5317d27511039d71c",
+                "reference": "9d9bd9e086b3acad09ab03f5317d27511039d71c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "henrikbjorn/phpspec-code-coverage": "1.0.*@dev",
+                "phpspec/phpspec": "2.0.*@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Event\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frenky.net"
+                }
+            ],
+            "description": "Event package",
+            "keywords": [
+                "emitter",
+                "event",
+                "listener"
+            ],
+            "time": "2014-10-11 16:18:15"
+        },
+        {
+            "name": "nesbot/carbon",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "5cb6e71055f7b0b57956b73d324cc4de31278f42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/5cb6e71055f7b0b57956b73d324cc4de31278f42",
+                "reference": "5cb6e71055f7b0b57956b73d324cc4de31278f42",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Carbon": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Nesbitt",
+                    "email": "brian@nesbot.com",
+                    "homepage": "http://nesbot.com"
+                }
+            ],
+            "description": "A simple API extension for DateTime.",
+            "homepage": "https://github.com/briannesbitt/Carbon",
+            "keywords": [
+                "date",
+                "datetime",
+                "time"
+            ],
+            "time": "2014-09-26 02:52:02"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "57a2aec2d597f166c4139e44953bc42b7eaf9e54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/57a2aec2d597f166c4139e44953bc42b7eaf9e54",
+                "reference": "57a2aec2d597f166c4139e44953bc42b7eaf9e54",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2014-11-26 18:36:25"
+        },
+        {
+            "name": "orno/di",
+            "version": "v2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orno/di.git",
+                "reference": "99fe55f626878b9b9c7331168b26570e0e781155"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orno/di/zipball/99fe55f626878b9b9c7331168b26570e0e781155",
+                "reference": "99fe55f626878b9b9c7331168b26570e0e781155",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "orno/cache": "Enables caching of reflection based resolution",
+                "orno/config": "Allows useage of config files rather than interacting with the container directly"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "tests/assets/functions.php"
+                ],
+                "psr-4": {
+                    "Orno\\Di\\": "src/",
+                    "OrnoTest\\Assets\\": "tests/assets"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Bennett",
+                    "email": "philipobenito@gmail.com"
+                }
+            ],
+            "description": "Orno\\Di is a small but powerful dependency injection container with automatic resolution of dependencies.",
+            "keywords": [
+                "container",
+                "dependency",
+                "di",
+                "injection",
+                "orno"
+            ],
+            "time": "2014-12-18 20:21:11"
+        },
+        {
+            "name": "orno/http",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orno/http.git",
+                "reference": "65d37f6f92f3357c234a592fdd57b2f54c2ef514"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orno/http/zipball/65d37f6f92f3357c234a592fdd57b2f54c2ef514",
+                "reference": "65d37f6f92f3357c234a592fdd57b2f54c2ef514",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "symfony/http-foundation": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Orno\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Bennett",
+                    "email": "philipobenito@gmail.com"
+                }
+            ],
+            "description": "A wrapper for Symfony\\HttpFoundation with some encapsulation and convenience methods.",
+            "homepage": "http://github.com/orno/http",
+            "keywords": [
+                "http",
+                "orno",
+                "request",
+                "response"
+            ],
+            "time": "2014-03-05 10:22:10"
+        },
+        {
+            "name": "orno/route",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orno/route.git",
+                "reference": "7ff5fb086f5ce8f5e4200d9ab1378f18af92c59a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orno/route/zipball/7ff5fb086f5ce8f5e4200d9ab1378f18af92c59a",
+                "reference": "7ff5fb086f5ce8f5e4200d9ab1378f18af92c59a",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/fast-route": "~0.2",
+                "orno/di": "~2.1",
+                "orno/http": "~1.0",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Orno\\Route\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Phil Bennett",
+                    "email": "philipobenito@gmail.com"
+                }
+            ],
+            "description": "Fast routing package combining Nikita Popov's FastRoute and Orno\\Di to provide route dispatching to dependency injected controllers.",
+            "keywords": [
+                "FastRoute",
+                "di",
+                "dispatcher",
+                "orno",
+                "route"
+            ],
+            "time": "2014-10-23 14:06:43"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "starbs/console",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/starbs/console.git",
+                "reference": "2ec54cc1faa6997a3175eb969a5cf3018ff53ae8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/starbs/console/zipball/2ec54cc1faa6997a3175eb969a5cf3018ff53ae8",
+                "reference": "2ec54cc1faa6997a3175eb969a5cf3018ff53ae8",
+                "shasum": ""
+            },
+            "require": {
+                "orno/di": "~2.1",
+                "php": ">=5.5.0",
+                "symfony/console": "~2.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Starbs\\Console\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@mineuk.com"
+                }
+            ],
+            "description": "Starbs Console Component",
+            "time": "2014-12-19 11:11:58"
+        },
+        {
+            "name": "starbs/http",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/starbs/http.git",
+                "reference": "847dc5a4b33260dddcc340140a12e9b24e8b39a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/starbs/http/zipball/847dc5a4b33260dddcc340140a12e9b24e8b39a1",
+                "reference": "847dc5a4b33260dddcc340140a12e9b24e8b39a1",
+                "shasum": ""
+            },
+            "require": {
+                "alexbilbie/proton": "~1.0.5@dev",
+                "php": ">=5.5.0",
+                "symfony/http-foundation": "~2.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Starbs\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@mineuk.com"
+                }
+            ],
+            "description": "Starbs Http Component",
+            "time": "2014-12-18 19:40:46"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v2.6.1",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "ef825fd9f809d275926547c9e57cbf14968793e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/ef825fd9f809d275926547c9e57cbf14968793e8",
+                "reference": "ef825fd9f809d275926547c9e57cbf14968793e8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/process": "~2.1"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-12-02 20:19:20"
+        },
+        {
+            "name": "symfony/debug",
+            "version": "v2.6.1",
+            "target-dir": "Symfony/Component/Debug",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Debug.git",
+                "reference": "08b529b4c0aa3e746d187fe2a63f08cb955a3566"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/08b529b4c0aa3e746d187fe2a63f08cb955a3566",
+                "reference": "08b529b4c0aa3e746d187fe2a63f08cb955a3566",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "symfony/http-foundation": "~2.1",
+                "symfony/http-kernel": "~2.1"
+            },
+            "suggest": {
+                "symfony/http-foundation": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Debug\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Debug Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-12-02 20:19:20"
+        },
+        {
+            "name": "symfony/event-dispatcher",
+            "version": "v2.6.1",
+            "target-dir": "Symfony/Component/EventDispatcher",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/EventDispatcher.git",
+                "reference": "720fe9bca893df7ad1b4546649473b5afddf0216"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/720fe9bca893df7ad1b4546649473b5afddf0216",
+                "reference": "720fe9bca893df7ad1b4546649473b5afddf0216",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.0",
+                "symfony/dependency-injection": "~2.6",
+                "symfony/expression-language": "~2.6",
+                "symfony/stopwatch": "~2.2"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-12-02 20:19:20"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "v2.6.1",
+            "target-dir": "Symfony/Component/HttpFoundation",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/HttpFoundation.git",
+                "reference": "0109221f3cf012bf027768ad3e4236dae1af5332"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/0109221f3cf012bf027768ad3e4236dae1af5332",
+                "reference": "0109221f3cf012bf027768ad3e4236dae1af5332",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "classmap": [
+                    "Symfony/Component/HttpFoundation/Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony HttpFoundation Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-12-02 20:19:20"
+        },
+        {
+            "name": "symfony/http-kernel",
+            "version": "v2.6.1",
+            "target-dir": "Symfony/Component/HttpKernel",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/HttpKernel.git",
+                "reference": "6e911d8a9e1a11c4584ad7b03858afa94e627203"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/6e911d8a9e1a11c4584ad7b03858afa94e627203",
+                "reference": "6e911d8a9e1a11c4584ad7b03858afa94e627203",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "psr/log": "~1.0",
+                "symfony/debug": "~2.6",
+                "symfony/event-dispatcher": "~2.5",
+                "symfony/http-foundation": "~2.5"
+            },
+            "require-dev": {
+                "symfony/browser-kit": "~2.2",
+                "symfony/class-loader": "~2.1",
+                "symfony/config": "~2.0",
+                "symfony/console": "~2.2",
+                "symfony/dependency-injection": "~2.0",
+                "symfony/expression-language": "~2.4",
+                "symfony/finder": "~2.0",
+                "symfony/process": "~2.0",
+                "symfony/routing": "~2.2",
+                "symfony/stopwatch": "~2.2",
+                "symfony/templating": "~2.2",
+                "symfony/translation": "~2.0",
+                "symfony/var-dumper": "~2.6"
+            },
+            "suggest": {
+                "symfony/browser-kit": "",
+                "symfony/class-loader": "",
+                "symfony/config": "",
+                "symfony/console": "",
+                "symfony/dependency-injection": "",
+                "symfony/finder": "",
+                "symfony/var-dumper": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\HttpKernel\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony HttpKernel Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-12-03 16:40:43"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "alexbilbie/proton": 20,
+        "starbs/console": 20,
+        "starbs/http": 20
+    },
+    "prefer-stable": false,
+    "platform": {
+        "php": ">=5.5.0"
+    },
+    "platform-dev": []
+}
