@@ -38,7 +38,7 @@ class Application extends AbstractApplication
      *
      * @return void
      */
-    abstract public function setup()
+    protected function setup()
     {
         $this->add($this->container->get('Starbs\Yeh\Console\Commands\RemoveCommand'));
     }

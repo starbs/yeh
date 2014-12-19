@@ -634,12 +634,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/starbs/console.git",
-                "reference": "2ec54cc1faa6997a3175eb969a5cf3018ff53ae8"
+                "reference": "670f6b6b2bf3174f47d8185c6299f055c83886b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/starbs/console/zipball/2ec54cc1faa6997a3175eb969a5cf3018ff53ae8",
-                "reference": "2ec54cc1faa6997a3175eb969a5cf3018ff53ae8",
+                "url": "https://api.github.com/repos/starbs/console/zipball/670f6b6b2bf3174f47d8185c6299f055c83886b3",
+                "reference": "670f6b6b2bf3174f47d8185c6299f055c83886b3",
                 "shasum": ""
             },
             "require": {
@@ -669,7 +669,7 @@
                 }
             ],
             "description": "Starbs Console Component",
-            "time": "2014-12-19 11:11:58"
+            "time": "2014-12-19 11:20:12"
         },
         {
             "name": "starbs/http",
@@ -1023,6 +1023,7 @@
         "starbs/http": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.5.0"
     },
