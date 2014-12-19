@@ -445,16 +445,16 @@
         },
         {
             "name": "orno/di",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orno/di.git",
-                "reference": "99fe55f626878b9b9c7331168b26570e0e781155"
+                "reference": "4644a0a898728f7c791bb1cb2840a5edf54aab79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orno/di/zipball/99fe55f626878b9b9c7331168b26570e0e781155",
-                "reference": "99fe55f626878b9b9c7331168b26570e0e781155",
+                "url": "https://api.github.com/repos/orno/di/zipball/4644a0a898728f7c791bb1cb2840a5edf54aab79",
+                "reference": "4644a0a898728f7c791bb1cb2840a5edf54aab79",
                 "shasum": ""
             },
             "require": {
@@ -495,7 +495,7 @@
                 "injection",
                 "orno"
             ],
-            "time": "2014-12-18 20:21:11"
+            "time": "2014-12-19 12:36:24"
         },
         {
             "name": "orno/http",
@@ -634,16 +634,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/starbs/console.git",
-                "reference": "29e9fac85cfb04f77adcb8ecb912253fdd270545"
+                "reference": "7604b1c21cc3cfba913e7e99cc32386a9db1bcd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/starbs/console/zipball/29e9fac85cfb04f77adcb8ecb912253fdd270545",
-                "reference": "29e9fac85cfb04f77adcb8ecb912253fdd270545",
+                "url": "https://api.github.com/repos/starbs/console/zipball/7604b1c21cc3cfba913e7e99cc32386a9db1bcd0",
+                "reference": "7604b1c21cc3cfba913e7e99cc32386a9db1bcd0",
                 "shasum": ""
             },
             "require": {
-                "orno/di": "~2.1",
+                "orno/di": "^2.3.1",
                 "php": ">=5.5.0",
                 "symfony/console": "~2.5"
             },
@@ -669,7 +669,7 @@
                 }
             ],
             "description": "Starbs Console Component",
-            "time": "2014-12-19 12:26:29"
+            "time": "2014-12-19 12:44:07"
         },
         {
             "name": "starbs/http",
@@ -677,16 +677,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/starbs/http.git",
-                "reference": "86b5f9a4078e0bd445e05db257006936dcc58cb2"
+                "reference": "47c5c7468329f407c8b21454ec30c6a4943ccaab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/starbs/http/zipball/86b5f9a4078e0bd445e05db257006936dcc58cb2",
-                "reference": "86b5f9a4078e0bd445e05db257006936dcc58cb2",
+                "url": "https://api.github.com/repos/starbs/http/zipball/47c5c7468329f407c8b21454ec30c6a4943ccaab",
+                "reference": "47c5c7468329f407c8b21454ec30c6a4943ccaab",
                 "shasum": ""
             },
             "require": {
-                "orno/di": "~2.1",
+                "orno/di": "^2.3.1",
                 "php": ">=5.5.0",
                 "symfony/http-foundation": "~2.5"
             },
@@ -712,7 +712,7 @@
                 }
             ],
             "description": "Starbs Http Component",
-            "time": "2014-12-19 12:26:19"
+            "time": "2014-12-19 12:44:20"
         },
         {
             "name": "symfony/console",
