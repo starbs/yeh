@@ -4,11 +4,11 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69305d4977fe63e3db448c2dd4a35736",
+    "hash": "e136957e1358f18528178f01a1c77362",
     "packages": [
         {
             "name": "alexbilbie/proton",
-            "version": "dev-master",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alexbilbie/Proton.git",
@@ -543,21 +543,21 @@
         },
         {
             "name": "orno/route",
-            "version": "v1.1.2",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orno/route.git",
-                "reference": "7ff5fb086f5ce8f5e4200d9ab1378f18af92c59a"
+                "reference": "e6a382623f5c4ad2f56c37af15a12978a6983dbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orno/route/zipball/7ff5fb086f5ce8f5e4200d9ab1378f18af92c59a",
-                "reference": "7ff5fb086f5ce8f5e4200d9ab1378f18af92c59a",
+                "url": "https://api.github.com/repos/orno/route/zipball/e6a382623f5c4ad2f56c37af15a12978a6983dbc",
+                "reference": "e6a382623f5c4ad2f56c37af15a12978a6983dbc",
                 "shasum": ""
             },
             "require": {
                 "nikic/fast-route": "~0.2",
-                "orno/di": "~2.1",
+                "orno/di": "~2.3",
                 "orno/http": "~1.0",
                 "php": ">=5.4"
             },
@@ -588,7 +588,7 @@
                 "orno",
                 "route"
             ],
-            "time": "2014-10-23 14:06:43"
+            "time": "2014-12-22 13:04:17"
         },
         {
             "name": "psr/log",
@@ -1017,9 +1017,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "alexbilbie/proton": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
