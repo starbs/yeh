@@ -36,7 +36,7 @@ class UploadController extends AbstractController
         }
 
         if (strtolower(substr($image->getMimeType(), 0, 5)) !== 'image') {
-            return $this->error(['message'  => 'Only images are allowed'], 400);
+            return $this->error(['message'  => 'Only images are allowed'], 415);
         }
 
         $url = $this->container->get('factory')->save($image);
