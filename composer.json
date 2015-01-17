@@ -10,9 +10,9 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "alexbilbie/proton": "~1.0.6",
-        "starbs/console": "~1.0",
-        "starbs/http": "~1.0",
+        "alexbilbie/proton": "~1.1.0",
+        "starbs/console": "~1.1@dev",
+        "starbs/http": "~1.1@dev",
         "illuminate/database": "~4.2",
         "hashids/hashids": "~1.0.4"
     },
@@ -23,7 +23,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "1.1-dev"
         }
     }
 }
