@@ -3,7 +3,7 @@ Starbs Yeh
 
 **Starbs Image Service!**
 
-*This is the 1.0 version.*
+*This is the 1.1 version.*
 
 ## License
 
