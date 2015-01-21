@@ -28,11 +28,11 @@ class RemoveController extends AbstractController
         $image = $this->container->get('factory')->remove($this->args['id']);
 
         if (!$image) {
-             return $this->success(['message' => 'Image removed'], 410);
+            return $this->success(['message' => 'Image removed'], 410);
         }
         
         if ($image) {
-             return $this->error(['message' => 'Image not removed. An error occured.'], 500);
+            return $this->error(['message' => 'Image not removed. An error occured.'], 500);
         }
 
         return $this->error(['message' => 'Not Found'], 404);
