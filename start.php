@@ -13,6 +13,7 @@
  */
 
 require __DIR__.'/vendor/autoload.php';
+
 $app = new Proton\Application();
 $app['Proton\Application'] = $app;
 
