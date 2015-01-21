@@ -41,7 +41,6 @@ class UploadController extends AbstractController
 
         $url = $this->container->get('factory')->save($image);
 
-        /* ShareX Compatability*/
         if ($this->input('sharex')) {
             return $this->raw($url, 'text/plain');
         }
