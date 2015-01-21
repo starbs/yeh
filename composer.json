@@ -11,9 +11,9 @@
     "require": {
         "php": ">=5.5.0",
         "alexbilbie/proton": "~1.0.6",
-        "starbs/console": "~1.0",
-        "starbs/http": "~1.0",
-        "illuminate/database": "~4.2",
+        "starbs/console": "~1.0.1",
+        "starbs/http": "~1.0.1",
+        "illuminate/database": "~4.2.12",
         "hashids/hashids": "~1.0.4"
     },
     "autoload": {
