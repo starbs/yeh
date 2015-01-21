@@ -30,7 +30,7 @@ class RemoveController extends AbstractController
         if (!$image) {
             return $this->success(['message' => 'Image removed'], 410);
         }
-        
+
         if ($image) {
             return $this->error(['message' => 'Image not removed. An error occured.'], 500);
         }
