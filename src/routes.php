@@ -18,4 +18,4 @@ $app->post('/', 'Starbs\Yeh\Http\Controllers\UploadController::index');
 
 $app->get('/{id}', 'Starbs\Yeh\Http\Controllers\MainController::index');
 
-$app->delete('/{id}', 'Starbs\Yeh\Http\Controllers\DeleteController::index');
+$app->delete('/{id}', 'Starbs\Yeh\Http\Controllers\RemoveController::index');
