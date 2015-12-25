@@ -15,5 +15,5 @@ $app['hash'] = function () {
 };
 
 $app['factory'] = function () use ($app) {
-    return new Starbs\Yeh\Factory($app['hash'], $app['url']);
+    return new Starbs\Yeh\Factory($app['hash'], $app['path'], $app['url']);
 };

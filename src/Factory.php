@@ -19,11 +19,13 @@ use Symfony\Component\HttpFoundation\File\File;
 class Factory
 {
     protected $hash;
+    protected $path;
     protected $url;
 
-    public function __construct(Hashids $hash, $url)
+    public function __construct(Hashids $hash, $path, $url)
     {
         $this->hash = $hash;
+        $this->path = $path;
         $this->url = $url;
     }
 
@@ -35,7 +37,12 @@ class Factory
         $model = Image::where('hash', $hash)->first();
 
         if (!$model) {
-            $model = Image::create(['hash' => $hash, 'image' => $image, 'mime' => $file->getMimeType()]);
+            if (mb_strlen($request->getContent(), '8bit') > 1048576) {
+                file_put_contents($this->path($id), $image);
+                $model = Image::create(['hash' => $hash, 'mime' => $file->getMimeType()]);
+            } else {
+                $model = Image::create(['hash' => $hash, 'image' => $image, 'mime' => $file->getMimeType()]);
+            }
         }
 
         unset($image);
@@ -51,7 +58,7 @@ class Factory
         $id = $this->decode($id);
 
         if ($model = Image::where('id', $id)->first()) {
-            return ['mime' => $model->mime, 'image' => $model->image];
+            return ['mime' => $model->mime, 'image' => $model->image ?: file_get_contents($this->path($id))];
         }
     }
 
@@ -60,8 +67,17 @@ class Factory
         $id = $this->decode($id);
 
         if ($model = Image::where('id', $id)->first()) {
+            if (!$model->image) {
+                unlink($this->path($id));
+            }
+
             return $model->delete();
         }
+    }
+
+    protected function path($id)
+    {
+        return "{$this->path}/{$id}";
     }
 
     protected function url($id)
