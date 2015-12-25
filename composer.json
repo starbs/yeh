@@ -20,5 +20,11 @@
         "psr-4": {
             "Starbs\\Yeh\\": "src/"
         }
+    },
+    "config": {
+        "platform": {
+            "php": "5.5.0"
+        },
+        "preferred-install": "dist"
     }
 }
