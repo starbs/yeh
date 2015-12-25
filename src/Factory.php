@@ -78,10 +78,6 @@ class Factory
 
     protected function decode($id)
     {
-        if (is_numeric($id)) {
-            return (int) $id;
-        } else {
-            return $this->hash->decode($id);
-        }
+        return $this->hash->decode($id);
     }
 }
