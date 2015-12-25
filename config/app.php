@@ -12,5 +12,6 @@
 
 return [
     'debug' => false,
+    'path'  => realpath(__DIR__.'/../storage'),
     'url'   => 'https://i.starbs.net',
 ];

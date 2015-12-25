@@ -15,9 +15,13 @@ require __DIR__.'/vendor/autoload.php';
 $app = new Proton\Application();
 $app['Proton\Application'] = $app;
 
-extract(require __DIR__.'/config/app.php');
-$app['debug'] = $debug;
-$app['url'] = $url;
+$config = require __DIR__.'/config/app.php';
+
+foreach ($config as $key => $value) {
+    $app[$key] => $value;
+}
+
+unset($config);
 
 require __DIR__.'/src/database.php';
 require __DIR__.'/src/bindings.php';
